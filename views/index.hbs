@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html>
+	<head>
+		<link href="./index.css" type="text/css" rel="stylesheet" media="screen">
+		<title>This Is Awkward - no more awkward conversations</title>
+	</head>
+	<body>
+		<div id="title">This Is Awkward<span id="color"<em>.</em></span></div>
+		<p>Sometimes, you need sit down, relax, and simply pussy out. No more awkward conversations, you need a service that'll handle it all for you. That's where we come in. We'll automate a call to anybody you want, and play a custom voice message. <em><strong>*Not all countries are supported (including Singapore)*<strong></em></p>
+		<form method="post" action="/go" name="callData">
+			<textarea placeholder='Your message here (e.g. "Hey Sophia, sorry, but I am breaking up with you.")' rows="4" cols="50" id="messageInput" name="callMessageToRecipient"></textarea>
+			<input id="nameInput" type="text" placeholder='Your name ("Anonymous" by default)' name="callSenderName">
+			<input id="numberInput" type="text" placeholder="The receiver's unformatted phone number (e.g. +17327572923, +14155551212)" name="callRecipientPhoneNumber">
+			<button id="goButton" class="btn btn-1 btn-1a">Go!</button>
+		</form>
+		<div id="status">{{ response.status }}</div>
+	</body>
+</html>
