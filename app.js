@@ -43,8 +43,8 @@ app.post('/go', function(req, res) {
 		twilioClient.makeCall ({
 
 			to: phoneNumber,
-			from: '+13478481674',
-			url: 'http://thisisawkward.rohankapur.com/voice'
+			from: 'YOUR_TWILIO_PHONE_NUMBER',
+			url: 'YOUR_TWIML_URL'
 		},
 		function(err, responseData) {
 
@@ -68,7 +68,7 @@ app.post('/go', function(req, res) {
 	}
 });
 
-app.post('/voice', function(req, res) {
+app.post('/YOUR_DESIRED_TWIML_DIR', function(req, res) {
 
 	var twiml = new twilio.TwimlResponse();
 
