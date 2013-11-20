@@ -73,7 +73,7 @@ app.post('/YOUR_DESIRED_TWIML_DIR', function(req, res) {
 	var twiml = new twilio.TwimlResponse();
 
     twiml.say("The following message has been sent from: " + name);
-    twiml.pause({length: 3});		        
+    twiml.pause({length: 1.5});		        
     twiml.say(message);
     twiml.pause({length: 3});	
     twiml.hangup();
